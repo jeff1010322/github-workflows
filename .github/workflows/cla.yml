@@ -2,11 +2,8 @@ name: "CLA Assistant"
 on:
   workflow_call:
     secrets:
-      GITHUB_TOKEN:
-        required: true
-        description: 'GitHub token with repo scope'
       PERSONAL_ACCESS_TOKEN:
-        required: false
+        required: true
         description: 'Personal access token with repo scope for storing signatures in a remote repository'
 
 # explicitly configure permissions, in case your GITHUB_TOKEN workflow permissions are set to read-only in repository settings
